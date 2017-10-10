@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/db2379db22.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/base.css" type="text/css">
     <link rel="stylesheet" href="css/layout.css" type="text/css">
     <link rel="stylesheet" href="css/modules.css" type="text/css">
     <title>Shannon E. Dillon</title>
+    <script id="projectTemplate" type="text/x-handlebars-template">
+      <p>{{ title }}</p>
+    </script>
   </head>
   <body>
     <header>
@@ -26,11 +30,12 @@
       </ul>
     </header>
     <div class="homeView">Wafer marzipan jelly beans lollipop tootsie roll sweet jelly cookie chocolate. Wafer ice cream I love I love chocolate bar icing bear claw. Soufflé marzipan ice cream oat cake carrot cake candy cupcake jelly beans ice cream. I love I love I love.</div>
-    <hr>
-    <div class="projectView">Liquorice croissant dessert halvah jelly-o I love halvah bear claw. Liquorice sesame snaps halvah soufflé liquorice. Chupa chups tart liquorice sweet roll donut dragée liquorice. Powder chocolate cake tart cake biscuit pastry candy jujubes.</div>
-    <hr>
+    <div class="projectView">
+      <ul class="projects"></ul>
+    </div>
     <div class="workView">Chocolate cake topping chupa chups gummi bears. Chocolate cake sugar plum cupcake tiramisu liquorice liquorice. Sugar plum sweet dragée dessert chocolate cake. Sugar plum chocolate bar cookie oat cake tootsie roll.</div>
-    <hr>
-    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/model/projects.js"></script>
+    <script type="text/javascript" src="scripts/controller/homeController.js"></script>
+    <script type="text/javascript" src="scripts/controller/projectController.js"></script>
   </body>
 </html>
