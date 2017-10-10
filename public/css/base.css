@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  color: black;
+}
+
+body {
+  background-image: url(http://thumbs.imagekind.com/5582492_650/Seattle-Skyline-in-Sunrise_art.jpg?v=1506005432);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFE0B2;
+}
+
+header {
+  background-color: #FFE0B2;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
