@@ -13,12 +13,16 @@ function Project(projectData){
 Project.prototype.toHtml = function(){
   let projectTemplateHTML = $('#projectTemplate').html();
   let compiledProjectTemplate = Handlebars.compile(projectTemplateHTML);
-  let filledProjectTemplate = compiledProjectTemplate(this);
+  return filledProjectTemplate = compiledProjectTemplate(this);
 }
 
 function createProjects(projectData){
   projectData.forEach(function(project){
     var project = new Project(project);
     projects.push(project);
+  })
+
+  projects.forEach(function(project){
+    $('.projects').append(project.toHtml());
   })
 }
