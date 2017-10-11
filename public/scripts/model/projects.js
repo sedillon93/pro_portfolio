@@ -12,11 +12,12 @@ function Project(projectData){
 
 Project.prototype.toHtml = function(){
   let projectTemplateHTML = $('#projectTemplate').html();
-  let compiledProjectTemplate = Handlebars.compile(projectTemplateHTML);
-  return filledProjectTemplate = compiledProjectTemplate(this);
+  let fillProjectTemplate = Handlebars.compile(projectTemplateHTML);
+  return fillProjectTemplate(this);
 }
 
 function createProjects(projectData){
+  // console.log(projectData);
   projectData.forEach(function(project){
     var projectObj = new Project(project);
     projects.push(projectObj);
@@ -28,7 +29,7 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  $.get('data/projects.js', function(response){
+  $.get('data/projects.json', function(response){
     // localStorage.setItem('rawProject', JSON.stringify(response));
     createProjects(response);
   })

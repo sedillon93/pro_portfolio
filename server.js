@@ -8,7 +8,7 @@ const APP = EXPRESS();
 
 APP.use(EXPRESS.static('public'));
 
-APP.get('*', function(request, response){
+APP.get('/', function(request, response){
   response.sendFile('index.html', {root: './public'});
 })
 
