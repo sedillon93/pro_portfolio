@@ -1,13 +1,24 @@
 'use strict';
 
-function Project(title, description, languages, dates, link){
-  this.title = title,
-  this.description = description,
-  this.languages = languages,
-  this.dates = dates,
-  this.link = link
+const projects = [];
+
+function Project(projectData){
+  this.title = projectData.title,
+  this.description = projectData.description,
+  this.languages = projectData.languages,
+  this.dates = projectData.dates,
+  this.link = projectData.link
 }
 
-let projectTemplateHTML = $('#projectTemplate').html();
-let compiledProjectTemplate = Handlebars.compile(projectTemplateHTML);
-compiledProjectTemplate
+Project.prototype.toHtml = function(){
+  let projectTemplateHTML = $('#projectTemplate').html();
+  let compiledProjectTemplate = Handlebars.compile(projectTemplateHTML);
+  let filledProjectTemplate = compiledProjectTemplate(this);
+}
+
+function createProjects(projectData){
+  projectData.forEach(function(project){
+    var project = new Project(project);
+    projects.push(project);
+  })
+}
