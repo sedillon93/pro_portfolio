@@ -17,7 +17,6 @@ Project.prototype.toHtml = function(){
 }
 
 function createProjects(projectData){
-  // console.log(projectData);
   projectData.forEach(function(project){
     var projectObj = new Project(project);
     projects.push(projectObj);
@@ -29,7 +28,7 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  $.get('data/projects.json', function(response){
+  $.get('/projects', function(response){
     // localStorage.setItem('rawProject', JSON.stringify(response));
     createProjects(response);
   })
