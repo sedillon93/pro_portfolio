@@ -28,10 +28,8 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  if ($('.projects').is(':empty')){
-    $.get('/projects', function(response){
-      // localStorage.setItem('rawProject', JSON.stringify(response));
-      createProjects(response);
-    })
-  }
+  $.get('/projects', function(response){
+    localStorage.setItem('rawProject', JSON.stringify(response));
+    createProjects(response);
+  })
 }
