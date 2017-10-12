@@ -12,8 +12,8 @@ function Project(projectData){
 
 Project.prototype.toHtml = function(){
   let projectTemplateHTML = $('#projectTemplate').html();
-  let compiledProjectTemplate = Handlebars.compile(projectTemplateHTML);
-  return filledProjectTemplate = compiledProjectTemplate(this);
+  let fillProjectTemplate = Handlebars.compile(projectTemplateHTML);
+  return fillProjectTemplate(this);
 }
 
 function createProjects(projectData){
@@ -28,7 +28,7 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  $.get('data/projects.js', function(response){
+  $.get('/projects', function(response){
     // localStorage.setItem('rawProject', JSON.stringify(response));
     createProjects(response);
   })
