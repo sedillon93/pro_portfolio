@@ -29,7 +29,8 @@ function createProjects(projectData){
 
 function displayProjects(){
   if (!localStorage.projectData){
-    $.get('/projects', function(response){
+    $.getJSON('/data/projects.json', function(response){
+      console.log(response);
       localStorage.setItem('projectData', JSON.stringify(response));
       if ($('.projects').is(':empty')){
         createProjects(response)

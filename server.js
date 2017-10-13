@@ -12,10 +12,6 @@ APP.get('/', function(request, response){
   response.sendFile('index.html', {root: './public'});
 })
 
-APP.get('/projects', function(request, response){
-  response.sendFile('projects.json', {root: './public/data'})
-})
-
 APP.listen(PORT, () => {
   console.log(`Listening on port: ${PORT}`)
 })
