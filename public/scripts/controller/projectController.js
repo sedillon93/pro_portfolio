@@ -2,9 +2,9 @@
 
 // (function(){
   function showProjects(){
-    console.log($('body').children());
-    $('body').children().hide();
-    $('.projects').show();
+    $('body div').hide();
+    displayProjects();
+    $('.projectView').show();
   }
   // return showProjects;
 // })()

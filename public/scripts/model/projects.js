@@ -28,8 +28,15 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  $.get('/projects', function(response){
-    localStorage.setItem('rawProject', JSON.stringify(response));
-    createProjects(response);
-  })
+  if (!localStorage.projectData){
+    $.get('/projects', function(response){
+      localStorage.setItem('projectData', JSON.stringify(response));
+      if ($('.projects').is(':empty')){
+        createProjects(response)
+      }
+    })
+  }
+  else if ($('.projects').is(':empty')){
+    createProjects(JSON.parse(localStorage.projectData));
+  }
 }
