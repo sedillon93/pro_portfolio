@@ -29,7 +29,7 @@ function createProjects(projectData){
 
 function displayProjects(){
   $.get('/projects', function(response){
-    // localStorage.setItem('rawProject', JSON.stringify(response));
+    localStorage.setItem('rawProject', JSON.stringify(response));
     createProjects(response);
   })
 }

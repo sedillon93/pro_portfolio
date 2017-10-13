@@ -1,5 +1,5 @@
 'use strict';
 
-// page('/projects', showProjects)
-//
-// page();
+page('/projects', showProjects)
+
+page();

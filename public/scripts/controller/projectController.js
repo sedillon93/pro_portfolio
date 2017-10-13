@@ -1,9 +1,10 @@
 'use strict';
 
-(function(){
+// (function(){
   function showProjects(){
+    console.log($('body').children());
     $('body').children().hide();
     $('.projects').show();
   }
-  return showProjects;
-})()
+  // return showProjects;
+// })()
