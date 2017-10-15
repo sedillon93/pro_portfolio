@@ -1,6 +1,6 @@
 'use strict';
 
-function(){
+let showJobs = function(){
   $('body div').hide();
   displayJobs();
   $('.jobs').show();
