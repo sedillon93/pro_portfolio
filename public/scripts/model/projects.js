@@ -11,7 +11,7 @@ function Project(projectData){
 }
 
 Project.prototype.toHtml = function(){
-  let projectTemplateHTML = $('#projectTemplate').html();
+  let projectTemplateHTML = $('#project_template').html();
   let fillProjectTemplate = Handlebars.compile(projectTemplateHTML);
   return fillProjectTemplate(this);
 }
@@ -28,8 +28,16 @@ function createProjects(projectData){
 }
 
 function displayProjects(){
-  $.get('/projects', function(response){
-    localStorage.setItem('rawProject', JSON.stringify(response));
-    createProjects(response);
-  })
+  if (!localStorage.projectData){
+    $.getJSON('/data/projects.json')
+      .done(function(response){
+        localStorage.setItem('projectData', JSON.stringify(response));
+        if ($('.projects').is(':empty')){
+          createProjects(response)
+        }
+      });
+  }
+  else if ($('.projects').is(':empty')){
+    createProjects(JSON.parse(localStorage.projectData));
+  }
 }

@@ -8,8 +8,8 @@ const APP = EXPRESS();
 
 APP.use(EXPRESS.static('public'));
 
-APP.get('/projects', function(request, response){
-  response.sendFile('projects.json', {root: './public/data'});
+APP.get('/', function(request, response){
+  response.sendFile('index.html', {root: './public'});
 })
 
 APP.listen(PORT, () => {
