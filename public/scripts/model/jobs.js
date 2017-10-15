@@ -30,12 +30,16 @@ function displayJobs(){
   if (!localStorage.jobData){
     $.getJSON('/data/jobs.json')
       .done(function(response){
-        console.log(response);
         localStorage.setItem('jobData', JSON.stringify(response));
         if ($('.jobs').is(':empty')){
           createJobs(response);
         }
       })
+  }
+  else if (localStorage.jobData){
+    if ($('.jobs').is(':empty')){
+      createJobs(JSON.parse(localStorage.jobData));
+    }
   }
   //if there is something in localStorage but not in the DOM, get the data from localStorage
 }
