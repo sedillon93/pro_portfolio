@@ -9,20 +9,19 @@
 }
 
 .socialIcons {
-  position: relative;
-  left: 75vw;
-  top: -1vh;
+  float: right;
+  margin: 2vh 3vh;
+}
+
+.socialIcons li {
+  margin: 0 1em;
 }
 
 @media screen and (min-width: 800px){
   .fa-bars {
     display: none;
   }
-  .navbar li {
-    display: block;
-  }
-  .socialIcons {
-    left: 93vw;
-    top: 2vh;
+  .socialIcons li {
+    margin: 0 .5vw;
   }
 }
