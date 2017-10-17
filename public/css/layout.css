@@ -1,3 +1,28 @@
+.fa-bars {
+  position: relative;
+  top: 2vh;
+  left: 5vw;
+}
+
 .navbar li {
   display: inline;
+}
+
+.socialIcons {
+  position: relative;
+  left: 75vw;
+  top: -1vh;
+}
+
+@media screen and (min-width: 800px){
+  .fa-bars {
+    display: none;
+  }
+  .navbar li {
+    display: block;
+  }
+  .socialIcons {
+    left: 93vw;
+    top: 2vh;
+  }
 }
