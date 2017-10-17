@@ -1,7 +1,12 @@
 'use strict';
+var portfolio = portfolio || {};
 
-let showJobs = function(){
-  $('body div').hide();
-  displayJobs();
-  $('.jobView').show();
-}
+(function(module){
+  const jobController = {};
+  jobController.showJobs = function(){
+    $('body div').hide();
+    displayJobs();
+    $('.jobView').show();
+  }
+  module.jobController = jobController;
+})(portfolio)

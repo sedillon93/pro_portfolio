@@ -1,6 +1,6 @@
 'use strict';
 
-page('/projects', showProjects);
-page('/jobs', showJobs);
+page('/projects', portfolio.projectController.showProjects);
+page('/jobs', portfolio.jobController.showJobs);
 
 page();

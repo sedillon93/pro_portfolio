@@ -1,10 +1,13 @@
 'use strict';
 
-// (function(){
-  function showProjects(){
+var portfolio = portfolio || {};
+
+(function(module){
+  const projectController = {};
+  projectController.showProjects = function(){
     $('body div').hide();
     displayProjects();
     $('.projectView').show();
   }
-  // return showProjects;
-// })()
+  portfolio.projectController = projectController;
+})(portfolio);
