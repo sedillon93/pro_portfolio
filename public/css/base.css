@@ -3,6 +3,10 @@
   color: black;
 }
 
+.clearfix {
+  clear: both;
+}
+
 body {
   background-image: url(http://thumbs.imagekind.com/5582492_650/Seattle-Skyline-in-Sunrise_art.jpg?v=1506005432);
   background-repeat: no-repeat;
