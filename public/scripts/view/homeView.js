@@ -1,5 +1,5 @@
 'use strict';
 
 (function(){
-  $('.navbar').children().hide();
+  // $('.navbar').children().hide();
 })()
