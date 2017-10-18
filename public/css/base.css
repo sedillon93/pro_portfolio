@@ -3,16 +3,20 @@
   color: black;
 }
 
+.clearfix {
+  clear: both;
+}
+
 body {
   background-image: url(http://thumbs.imagekind.com/5582492_650/Seattle-Skyline-in-Sunrise_art.jpg?v=1506005432);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #FFE0B2;
+  background-color: #75dff9;
 }
 
 header {
-  background-color: #FFE0B2;
+  background-color: #75dff9;
 }
 
 ul {
@@ -25,4 +29,5 @@ ul li {
 
 a {
   text-decoration: none;
+  display: inline;
 }

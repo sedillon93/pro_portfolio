@@ -1,3 +1,5 @@
 'use strict';
 
-$('.navbar').children().hide();
+(function(){
+  // $('.navbar').children().hide();
+})()

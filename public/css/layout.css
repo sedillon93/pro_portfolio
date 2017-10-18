@@ -1,3 +1,46 @@
+.fa-bars {
+  position: relative;
+  top: 2vh;
+  left: 5vw;
+}
+
 .navbar li {
   display: inline;
+}
+
+.socialIcons {
+  float: right;
+  margin: 2vh 3vw;
+}
+
+.socialIcons li {
+  margin: 0 1em;
+}
+
+.homeView p{
+  padding: 0 4vw;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 800px){
+  header {
+    height: 8vh;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .socialIcons {
+    margin: 3vh 3vw;
+  }
+
+  .socialIcons li {
+    margin: 0 .5vw;
+  }
+
+  .navbar {
+    position: relative;
+    top: -5.5vh;
+  }
 }

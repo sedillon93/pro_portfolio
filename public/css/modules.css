@@ -2,6 +2,19 @@
   height: 4vh;
 }
 
-/*.navbar a {
-  color: #E0F2F1;
-}*/
+.navbar a {
+  padding: 0 5vw;
+}
+
+@media screen and (min-width: 800px){
+  .navbar a {
+    padding: 0 2vw;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .navbar {
+    padding: 0;
+    width: 50vw;
+  }
+}

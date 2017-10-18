@@ -5,7 +5,7 @@ var portfolio = portfolio || {};
   const jobController = {};
   jobController.showJobs = function(){
     $('body div').hide();
-    displayJobs();
+    portfolio.Job.displayJobs();
     $('.jobView').show();
   }
   module.jobController = jobController;

@@ -6,7 +6,7 @@ var portfolio = portfolio || {};
   const projectController = {};
   projectController.showProjects = function(){
     $('body div').hide();
-    displayProjects();
+    portfolio.Project.displayProjects();
     $('.projectView').show();
   }
   portfolio.projectController = projectController;
