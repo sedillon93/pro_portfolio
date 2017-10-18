@@ -1,6 +1,5 @@
 .navbar {
   height: 4vh;
-  width: 50vw;
 }
 
 .navbar a {
@@ -16,5 +15,6 @@
   }
   .navbar {
     padding: 0;
+    width: 50vw;
   }
 }
