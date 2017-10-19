@@ -4,10 +4,9 @@ var portfolio = portfolio || {};
 
 (function(module){
   let homeController = function(){
+    $('body div').hide();
+    $('.clearfix').show();
     $('.homeView').show();
-    $('.fa-bars').on('click', function(){
-      $('.navbar').children().toggle();
-    })
   }
   portfolio.homeController = homeController;
 })(portfolio)
