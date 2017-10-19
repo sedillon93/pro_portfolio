@@ -4,10 +4,6 @@
   left: 5vw;
 }
 
-.navbar li {
-  display: inline;
-}
-
 .socialIcons {
   float: right;
   margin: 2vh 3vw;

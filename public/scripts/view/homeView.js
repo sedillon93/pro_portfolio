@@ -1,5 +1,5 @@
 'use strict';
 
 (function(){
-  // $('.navbar').children().hide();
+  $('.fa-bars').click();
 })()
