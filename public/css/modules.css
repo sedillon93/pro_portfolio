@@ -1,7 +1,7 @@
 .background {
   height: 100%;
   background-color: rgba(255, 255, 255, .6);
-  padding: 2vh 0;
+  padding: 2vh 0 80vh;
 }
 
 .navbar {
