@@ -1,6 +1,6 @@
 'use strict';
 
-page('/home', placeholderfunction);
+page('/home', portfolio.homeController);
 page('/projects', portfolio.projectController.showProjects);
 page('/jobs', portfolio.jobController.showJobs);
 
