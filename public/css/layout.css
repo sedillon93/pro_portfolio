@@ -4,10 +4,6 @@
   left: 5vw;
 }
 
-.navbar li {
-  display: inline;
-}
-
 .socialIcons {
   float: right;
   margin: 2vh 3vw;
@@ -25,10 +21,6 @@
 @media screen and (min-width: 800px){
   header {
     height: 8vh;
-  }
-
-  .fa-bars {
-    display: none;
   }
 
   .socialIcons {
