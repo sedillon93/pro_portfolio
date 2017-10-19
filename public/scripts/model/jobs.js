@@ -24,6 +24,7 @@ const jobs = [];
     })
 
     jobs.forEach(function(job){
+      console.log(job.toHTML())
       $('.jobs').append(job.toHTML());
     });
   }
