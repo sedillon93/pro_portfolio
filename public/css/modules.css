@@ -1,20 +1,49 @@
+.background {
+  height: 100%;
+  background-color: rgba(255, 255, 255, .6);
+  padding: 2vh 0 80vh;
+}
+
 .navbar {
   height: 4vh;
 }
 
+.navbar li, .socialIcons li {
+  display: inline;
+}
+
 .navbar a {
-  padding: 0 5vw;
+  padding: 0 2vw;
+}
+
+.projects li, .jobs li {
+  padding-bottom: 3vh;
+}
+
+.homeView p {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px){
-  .navbar a {
-    padding: 0 2vw;
-  }
-  .fa-bars {
-    display: none;
-  }
   .navbar {
     padding: 0;
     width: 50vw;
+  }
+
+  .navbar a {
+    padding: 0 2vw;
+  }
+
+  .socialIcons, .navbar li {
+    font-size: 1.5em;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .homeView p {
+    font-size: 2em;
   }
 }
