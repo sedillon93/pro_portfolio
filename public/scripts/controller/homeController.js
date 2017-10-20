@@ -3,7 +3,8 @@
 var portfolio = portfolio || {};
 
 (function(module){
-  let homeController = function(){
+  let homeController = {};
+  homeController.showHome = function(){
     $('body div').hide();
     $('.clearfix').show();
     $('.homeView').show();

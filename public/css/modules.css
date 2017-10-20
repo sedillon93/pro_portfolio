@@ -13,11 +13,16 @@
 }
 
 .navbar a {
-  padding: 0 5vw;
+  padding: 0 2vw;
 }
 
-.projects li {
-  padding-bottom: 100px;
+.projects li, .jobs li {
+  padding-bottom: 3vh;
+}
+
+.homeView p {
+  font-size: 1.5em;
+  text-align: center;
 }
 
 @media screen and (min-width: 800px){
@@ -30,7 +35,15 @@
     padding: 0 2vw;
   }
 
+  .socialIcons, .navbar li {
+    font-size: 1.5em;
+  }
+
   .fa-bars {
     display: none;
+  }
+
+  .homeView p {
+    font-size: 2em;
   }
 }

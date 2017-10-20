@@ -17,10 +17,10 @@
     <script id="project_template" type="text/x-handlebars-template">
       <li>
         <p>{{ title }}</p>
-        <p>{{ description }}</p>
-        <p>{{ languages }}</p>
-        <p>{{ dates }}</p>
-        <p>{{ link }}</p>
+        <p>Job description: {{ description }}</p>
+        <p>Languages used: {{ languages }}</p>
+        <p>Dates: {{ dates }}</p>
+        <p>check it out <a href="{{ link }}">here</a></p>
       </li>
     </script>
     <script id="job_template" type="text/x-handlebars-template">
@@ -30,6 +30,10 @@
         <p>{{ description }}</p>
         <p>{{ dates }}</p>
       </li>
+    </script>
+    <script type="text/x-handlebars-template">
+      <li>Email:{{ email }}</li>
+      <li>Phone: {{ phone }}</li>
     </script>
   </head>
   <body>
@@ -44,17 +48,22 @@
         <li><a href="/home">Home</a></li>
         <li><a href="/projects">Projects</a></li>
         <li><a href="/jobs">Experience</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </header>
     <section class="background">
       <div class="homeView">
-        <p>Hi, I'm Shannon: front-end developer exploring the world of full-stack JavaScript.</p>
+        <p>Hi, I'm Shannon</p>
+        <p>Developing apps and exploring the world of full-stack JavaScript.</p>
       </div>
       <div class="projectView">
         <ul class="projects"></ul>
       </div>
       <div class="jobView">
         <ul class="jobs"></ul>
+      </div>
+      <div class="contactView">
+        <ul class="contact"></ul>
       </div>
     </section>
     <script type="text/javascript" src="scripts/model/projects.js"></script>
@@ -63,6 +72,7 @@
     <script type="text/javascript" src="scripts/controller/homeController.js"></script>
     <script type="text/javascript" src="scripts/controller/projectController.js"></script>
     <script type="text/javascript" src="scripts/controller/jobController.js"></script>
+    <script type="text/javascript" src="scripts/controller/contactController.js"></script>
     <script type="text/javascript" src="scripts/controller/routes.js"></script>
   </body>
 </html>
