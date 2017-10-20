@@ -7,7 +7,7 @@ var portfolio = portfolio || {};
   homeController.showHome = function(){
     $('body div').hide();
     $('.clearfix').show();
-    $('.homeView').show();
+    $('.home').show();
   }
   portfolio.homeController = homeController;
 })(portfolio)

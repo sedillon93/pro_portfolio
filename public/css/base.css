@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: black;
+  font-family: 'Acme', sans-serif;
 }
 
 .clearfix {

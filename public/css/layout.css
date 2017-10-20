@@ -10,12 +10,24 @@
 }
 
 .socialIcons li {
-  margin: 0 1em;
+  margin: 0 1vw;
 }
 
-.homeView p{
+.home p{
   padding: 0 4vw;
   line-height: 1.4;
+}
+
+#headShot {
+  text-align: center;
+}
+
+.jobs, .projects, .contact {
+  padding: 0 10vw;
+}
+
+p {
+  margin: .8vh 0;
 }
 
 @media screen and (min-width: 800px){
@@ -34,5 +46,9 @@
   .navbar {
     position: relative;
     top: -5.5vh;
+  }
+
+  .home {
+    margin-top: 10vh;
   }
 }

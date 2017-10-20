@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <script src="https://use.fontawesome.com/db2379db22.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
@@ -25,15 +26,15 @@
     </script>
     <script id="job_template" type="text/x-handlebars-template">
       <li>
-        <p>{{ title }}</p>
-        <p>{{ employer }}</p>
-        <p>{{ description }}</p>
-        <p>{{ dates }}</p>
+        <p>Title: {{ title }}</p>
+        <p>Employer: {{ employer }}</p>
+        <p>Description: {{ description }}</p>
+        <p>Work dates: {{ dates }}</p>
       </li>
     </script>
-    <script type="text/x-handlebars-template">
-      <li>Email:{{ email }}</li>
-      <li>Phone: {{ phone }}</li>
+    <script id="contact_template" type="text/x-handlebars-template">
+      <li><p>Email: {{ email }}</p></li>
+      <li><p>Phone: {{ phone }}</p></li>
     </script>
   </head>
   <body>
@@ -52,9 +53,10 @@
       </ul>
     </header>
     <section class="background">
-      <div class="homeView">
-        <p>Hi, I'm Shannon</p>
-        <p>Developing apps and exploring the world of full-stack JavaScript.</p>
+      <div class="home">
+        <p id="nameLine">Hi, I'm Shannon</p>
+        <p id="headShot"><img src="http://starsricha.snydle.com/files/2013/02/Diwali-Rangoli-Design.jpg" /></p>
+        <p>Focused on providing great user experiences and writing clean, functional code using full-stack JavaScript</p>
       </div>
       <div class="projectView">
         <ul class="projects"></ul>
@@ -69,6 +71,7 @@
     <script type="text/javascript" src="scripts/model/projects.js"></script>
     <script type="text/javascript" src="scripts/model/jobs.js"></script>
     <script type="text/javascript" src="scripts/model/homePage.js"></script>
+    <script type="text/javascript" src="scripts/model/contact.js"></script>
     <script type="text/javascript" src="scripts/controller/homeController.js"></script>
     <script type="text/javascript" src="scripts/controller/projectController.js"></script>
     <script type="text/javascript" src="scripts/controller/jobController.js"></script>
