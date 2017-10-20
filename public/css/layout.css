@@ -1,3 +1,7 @@
+body {
+  position: relative;
+}
+
 .fa-bars {
   position: relative;
   top: 2vh;
@@ -28,6 +32,12 @@
 
 p {
   margin: .8vh 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 @media screen and (min-width: 800px){
