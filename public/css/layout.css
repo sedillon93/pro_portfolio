@@ -10,12 +10,34 @@
 }
 
 .socialIcons li {
-  margin: 0 1em;
+  margin: 0 1vw;
 }
 
-.homeView p{
+.home p{
   padding: 0 4vw;
   line-height: 1.4;
+}
+
+#headShot {
+  text-align: center;
+}
+
+.jobs, .projects, .contact {
+  padding: 0 10vw;
+}
+
+p {
+  margin: .8vh 0;
+}
+
+footer {
+  background-color: #75dff9;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 3vh;
 }
 
 @media screen and (min-width: 800px){
@@ -34,5 +56,13 @@
   .navbar {
     position: relative;
     top: -5.5vh;
+  }
+
+  .home {
+    margin-top: 10vh;
+  }
+
+  .jobs, .projects, .contact {
+    padding: 3vh 6vw;
   }
 }

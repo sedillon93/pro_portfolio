@@ -1,7 +1,14 @@
-.background {
-  height: 100%;
-  background-color: rgba(255, 255, 255, .6);
-  padding: 2vh 0 80vh;
+header {
+  height: 70px;
+}
+
+.content {
+  min-height: calc(100vh - 40px);
+}
+
+footer {
+  height: 50px;
+  padding-left: 20px;
 }
 
 .navbar {
@@ -20,15 +27,36 @@
   padding-bottom: 3vh;
 }
 
-.homeView p {
-  font-size: 1.5em;
+.home {
+  margin-top: 8vh;
+}
+
+.home p {
   text-align: center;
+  margin: 2vh 0;
+}
+
+.home img {
+  border-radius: 100%;
+  height: 150px;
+}
+
+#nameLine {
+  font-size: 2em;
 }
 
 @media screen and (min-width: 800px){
+  .background {
+    padding: 5vh 0 82vh;
+  }
+
   .navbar {
     padding: 0;
     width: 50vw;
+  }
+
+  .navitem {
+    display: inline!important;
   }
 
   .navbar a {
@@ -43,7 +71,16 @@
     display: none;
   }
 
-  .homeView p {
-    font-size: 2em;
+  .home p {
+    font-size: 1.5em;
+    margin: 6vh 0;
+  }
+
+  #nameLine {
+    font-size: 2.5em;
+  }
+
+  .home img {
+    height: 200px;
   }
 }

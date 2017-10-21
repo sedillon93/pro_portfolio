@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  color: black;
+  font-family: 'Acme', sans-serif;
 }
 
 .clearfix {
@@ -8,11 +8,12 @@
 }
 
 body {
-  background-image: url(http://thumbs.imagekind.com/5582492_650/Seattle-Skyline-in-Sunrise_art.jpg?v=1506005432);
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url(http://thumbs.imagekind.com/5582492_650/Seattle-Skyline-in-Sunrise_art.jpg?v=1506005432);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-color: #75dff9;
+  height: 100%;
 }
 
 header {
@@ -24,7 +25,8 @@ ul {
   list-style: none;
 }
 
-a {
+a, a:active {
   text-decoration: none;
   display: inline;
+  color: black
 }
