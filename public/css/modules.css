@@ -27,8 +27,13 @@ footer {
   padding-bottom: 3vh;
 }
 
+.home {
+  margin-top: 8vh;
+}
+
 .home p {
   text-align: center;
+  margin: 2vh 0;
 }
 
 .home img {
@@ -50,6 +55,10 @@ footer {
     width: 50vw;
   }
 
+  .navitem {
+    display: inline!important;
+  }
+
   .navbar a {
     padding: 0 2vw;
   }
@@ -64,6 +73,7 @@ footer {
 
   .home p {
     font-size: 1.5em;
+    margin: 6vh 0;
   }
 
   #nameLine {

@@ -55,4 +55,8 @@ footer {
   .home {
     margin-top: 10vh;
   }
+
+  .jobs, .projects, .contact {
+    padding: 3vh 6vw;
+  }
 }
