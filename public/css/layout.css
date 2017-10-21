@@ -31,7 +31,13 @@ p {
 }
 
 footer {
+  background-color: #75dff9;
   width: 100%;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 3vh;
 }
 
 @media screen and (min-width: 800px){
