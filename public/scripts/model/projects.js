@@ -44,4 +44,5 @@ const projects = [];
     }
   }
   module.Project = Project;
+  module.Project.displayProjects();
 })(portfolio)
