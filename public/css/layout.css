@@ -31,7 +31,6 @@ p {
 }
 
 footer {
-  background-color: #75dff9;
   width: 100%;
   text-align: center;
 }
@@ -41,10 +40,6 @@ footer p {
 }
 
 @media screen and (min-width: 800px){
-  header {
-    height: 8vh;
-  }
-
   .socialIcons {
     margin: 3vh 3vw;
   }

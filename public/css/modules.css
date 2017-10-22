@@ -1,9 +1,15 @@
-header {
-  height: 70px;
-}
-
 .content {
   min-height: calc(100vh - 40px);
+}
+
+.home p {
+  text-align: center;
+  margin: 2vh 0;
+}
+
+.home img {
+  border-radius: 100%;
+  height: 150px;
 }
 
 footer {
@@ -25,20 +31,6 @@ footer {
 
 .projects li, .jobs li {
   padding-bottom: 3vh;
-}
-
-.home {
-  margin-top: 8vh;
-}
-
-.home p {
-  text-align: center;
-  margin: 2vh 0;
-}
-
-.home img {
-  border-radius: 100%;
-  height: 150px;
 }
 
 #nameLine {
