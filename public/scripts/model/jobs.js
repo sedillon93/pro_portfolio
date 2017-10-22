@@ -45,4 +45,5 @@ const jobs = [];
     }
   }
   module.Job = Job;
+  module.Job.displayJobs();
 })(portfolio)
