@@ -1,5 +1,17 @@
+.fa-bars {
+  font-size: 3vh;
+}
+
 .content {
   min-height: calc(100vh - 40px);
+}
+
+.home, .jobs {
+  background-color: white;
+}
+
+.projects, .contact {
+  background-color: #E0F7FA;
 }
 
 .home p {

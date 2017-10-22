@@ -6,11 +6,15 @@
 
 .socialIcons {
   float: right;
-  margin: 2vh 3vw;
+  margin: 2vh 3vw 1vh 0;
 }
 
 .socialIcons li {
   margin: 0 1vw;
+}
+
+.content {
+  margin-top: 10vh;
 }
 
 .home p{
@@ -23,11 +27,15 @@
 }
 
 .jobs, .projects, .contact {
-  padding: 0 10vw;
+  padding: 2vh 10vw;
 }
 
 p {
   margin: .8vh 0;
+}
+
+#phone p {
+  margin-bottom: 0;
 }
 
 footer {
@@ -37,6 +45,7 @@ footer {
 
 footer p {
   padding-top: 3vh;
+  margin: 0;
 }
 
 @media screen and (min-width: 800px){
