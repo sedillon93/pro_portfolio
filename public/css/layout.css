@@ -43,9 +43,13 @@ footer {
   text-align: center;
 }
 
-footer p {
+.fa-envelope-o{
+  display: inline-block;
+}
+
+#copyright {
   padding-top: 3vh;
-  margin: 0;
+  margin: 0 2vw 0 0;
 }
 
 @media screen and (min-width: 800px){
